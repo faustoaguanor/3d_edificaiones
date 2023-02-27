@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Construcciones 3D</title>
+<title>Edificaciones 3D</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <base target="_blank">
 <link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
@@ -35,27 +35,27 @@
     <!-- query result -->
     <div id="queryresult">
       <table id="qr_coords_table">
-        <caption>Coordenadas<div id="zoomtopoint" class="action-zoom zoombtn"></div></caption>
+        <caption>Coordenadas <div id="zoomtopoint" class="action-zoom zoombtn"></div></caption>
         <tr><td id="qr_coords"></td></tr>
       </table>
 
       <table id="qr_layername_table">
-        <caption>Layer <div id="zoomtolayer" class="action-zoom zoombtn"></div></caption>
+        <caption>Capa <div id="zoomtolayer" class="action-zoom zoombtn"></div></caption>
         <tr><td id="qr_layername"></td></tr>
       </table>
 
       <table id="qr_attrs_table">
-        <caption>Attributos</caption>
+        <caption>Atributos</caption>
       </table>
 
       <!-- camera actions and measure tool -->
-      <div id="orbitbtn" class="action-btn action-orbit">Orbit</div>
-      <div id="measurebtn" class="action-btn">Medir Distancia</div>
+      <div id="orbitbtn" class="action-btn action-orbit">Orbitar</div>
+      <div id="measurebtn" class="action-btn">Medir Discanticia</div>
     </div>
 
     <!-- page info -->
     <div id="pageinfo">
-      <h1>URL</h1>
+      <h1>Url</h1>
       <div><input id="urlbox" type="text"></div>
 
       <h1>Uso</h1>
@@ -104,7 +104,8 @@
 </div>
 
 <script>
-Q3D.Config.viewpoint = {lookAt:{x:502169.3290841346,y:9980036.067613928,z:2802.5374698566484},pos:{x:501571.4816351623,y:9979732.337683074,z:3247.4763192989167}};
+Q3D.Config.viewpoint = {lookAt:{x:503323.2475480021,y:9981173.030125553,z:8.14048137719317e-15},pos:{x:501849.50228359585,y:9979902.234959522,z:3315.270114586279}};
+Q3D.Config.localMode = true;
 
 var container = document.getElementById("view"),
     app = Q3D.application,
@@ -113,7 +114,7 @@ var container = document.getElementById("view"),
 app.init(container);    // initialize viewer
 
 // load the scene
-app.loadSceneFile("./data/index/scene.json", function (scene) {
+app.loadSceneFile("./data/index/scene.js", function (scene) {
   // scene file has been loaded
   app.start();
 
