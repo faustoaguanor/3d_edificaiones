@@ -3,32 +3,43 @@
 SPDX-License-Identifier: MIT
 https://github.com/minorua/Qgis2threejs
 */
+@media screen and (max-width: 767px) {
+
+ .barra h1{
+    display: none;
+  
+  }
+  .barra #logo{
+
+    width: 50%;
+  
+  }
+
+}
 
 .barra{
   display: flex;
-  width: 60%;
-  height: 7vh;
+  width: 50%;
+  height: 5em;
   justify-content: flex-start;
   align-items: center;
   background-color:  #FFFFFF;
-  margin: 1em;
+  flex-wrap: wrap;
 }
 
 #logo{
 
-  width: 8em;
-  padding-top: 0.2em;
+  width: 20%;
 
 }
 
 
 
 h1{
-  width: 50vw;
+  width: 80%;
   display: block;
   color : #27497C;
-  font-size: 2.5em;
-  font-weight: 900;
+  font-size: 1.5em;
   text-align: left;
 
 
